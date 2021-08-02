@@ -106,12 +106,12 @@ nav>label:hover {
     background: #00C8FF;
 }
 
-#nav-home:checked~nav #label-home, #nav-basic:checked~nav #label-basic, #nav-dom:checked~nav #label-dom, #nav-bom:checked~nav #label-bom {
+#nav-home:checked~nav #label-home, #nav-basic:checked~nav #label-basic, #nav-dom:checked~nav #label-dom, #nav-bom:checked~nav #label-bom, #nav-adv:checked~nav #label-adv {
     background: #EAFFBA;
     border-left: 3px solid red;
 }
 
-#nav-home:checked~main #home, #nav-basic:checked~main #basic, #nav-dom:checked~main #dom, #nav-bom:checked~main #bom {
+#nav-home:checked~main #home, #nav-basic:checked~main #basic, #nav-dom:checked~main #dom, #nav-bom:checked~main #bom, #nav-adv:checked~main #advanced {
     display: block;
 }
 
