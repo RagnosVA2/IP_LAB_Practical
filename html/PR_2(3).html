@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2(3)</title>
+    <link rel="stylesheet" href="/css/style_PR_2(3).css">
+    </link>
+    <script src="/js/js_PR_2(3).js"></script>
+</head>
+
+<body>
+    <header>Javasricpt</header>
+    <input type="radio" id="nav-home" name="navbar" checked>
+    <input type="radio" id="nav-basic" name="navbar">
+    <input type="radio" id="nav-dom" name="navbar">
+    <input type="radio" id="nav-bom" name="navbar">
+    <nav>
+        <label for="nav-home" id="label-home">Home</label>
+        <label for="nav-basic" id="label-basic">Basic</label>
+        <label for="nav-dom" id="label-dom">JS &amp; DOM</label>
+        <label for="nav-bom" id="label-bom">JS &amp; BOM</label>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>&#11088;&nbsp;<u>Introduction</u></h2>
+            <div class="content">
+                <div class="content-parts">
+                    JavaScript is the most popular and widely used client-side scripting language. Client-side scripting
+                    refers to scripts that run within your web browser. JavaScript is designed to add interactivity and
+                    dynamic effects to the web pages by manipulating the content returned from a web server.
+                    JavaScript was originally developed as LiveScript by Netscape in the mid 1990s. It was later renamed
+                    to JavaScript in 1995, and became an ECMA standard in 1997. Now JavaScript is the standard
+                    client-side scripting language for web-based applications, and it is supported by virtually all web
+                    browsers available today, such as Google Chrome, Mozilla Firefox, Apple Safari, etc.
+                    JavaScript is an object-oriented language, and it also has some similarities in syntax to Java
+                    programming language. But, JavaScript is not related to Java in any way.
+                    JavaScript is officially maintained by ECMA (European Computer Manufacturers Association) as
+                    ECMAScript. ECMAScript 6 (or ES6) is the latest major version of the ECMAScript standard.
+                </div>
+            </div>
+        </section>
+        <section id="basic">
+            <h2>&#11088;&nbsp;<u>Basic</u></h2>
+            <div class="content">
+                <div class="content-parts">
+                    <script>
+                        document.write("<h3>JavaScript</h3>");
+                        document.write("Hello World!!");
+                    </script>
+                </div>
+                <div class="content-parts">
+                    <script>
+                        document.write("<h3>If Else</h3>");
+                        var d = new Date();
+                        if (d.getFullYear() % 4 == 0) {
+                            document.write(d.getFullYear() + " is a Leap Year.")
+                        }
+                        else {
+                            document.write(d.getFullYear() + " is not a Leap Year.")
+                        }
+                    </script>
+                </div>
+                <div class="content-parts">
+                    <script>
+                        var d = new Date();
+                        document.write("<h3>Switch-Case</h3>");
+                        switch (d.getDay()) {
+                            case 0:
+                                document.write("Today is Sunday.");
+                                break;
+                            case 1:
+                                document.write("Today is Monday.");
+                                break;
+                            case 2:
+                                document.write("Today is Tuesday.");
+                                break;
+                            case 3:
+                                document.write("Today is Wednesday.");
+                                break;
+                            case 4:
+                                document.write("Today is Thursday.");
+                                break;
+                            case 5:
+                                document.write("Today is Friday.");
+                                break;
+                            case 6:
+                                document.write("Today is Saturday.");
+                                break;
+                            default:
+                                document.write("No information available for that day.");
+                                break;
+                        }
+                    </script>
+                </div>
+                <div class="content-parts">
+                    <script>
+                        document.write("<h3>Array</h3>");
+                        var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+
+                        document.write("fruits [" + fruits + "]");
+                        document.write("<br>fruits[0] : " + fruits[0]);
+                        document.write("<br>fruits[1] : " + fruits[1]);
+                        document.write("<br>fruits[2] : " + fruits[2]);
+                        document.write("<br>There are " + fruits.length + " fruits in array.");
+                    </script>
+                </div>
+                <div class="content-parts">
+                    <script>
+                        document.write("<h3>Sort Array</h3>");
+                        var number = [100, 5, 67, 22, 140, 25];
+                        document.write("number : [" + number + "]");
+                        number.sort(function (a, b) {
+                            return a - b;
+                        });
+                        document.write("<br>After sorting : ");
+                        document.write("<br>number : [" + number + "]");
+                    </script>
+                </div>
+                <div class="content-parts">
+                    <script>
+                        document.write("<h3>While Loop</h3>");
+                        var i = 1;
+                        while (i <= 5) {
+                            document.write("The number is " + i + "<br>");
+                            i++;
+                        }
+                    </script>
+                </div>
+                <div class="content-parts">
+                    <script>
+                        document.write("<h3>For Loop</h3>");
+                        var persons = [
+                            { name: "Harry", age: 14 },
+                            { name: "Ethan", age: 30 },
+                            { name: "Peter", age: 21 },
+                            { name: "Clark", age: 42 }
+                        ];
+                        document.write("<strong>Name &nbsp;Age</strong><br>");
+                        for (var i in persons) {
+                            document.write(persons[i].name + " " + persons[i].age + "<br>");
+                        }
+                    </script>
+                </div>
+                <div class="content-parts">
+                    <script>
+                        document.write("<h3>Object</h3>");
+                        var book = {
+                            name: "Harry Potter and the Goblet of Fire",
+                            author: "J. K. Rowling",
+                            "publication date": "8 July 2000"
+                        };
+                        document.write("book {<br>name : " + book["name"] + "<br>");
+                        document.write("author : " + book["author"] + "<br>");
+                        document.write("publication date : " + book["publication date"] + "<br>}");
+                    </script>
+                </div>
+            </div>
+        </section>
+        <section id="dom">
+            <h2>&#11088;&nbsp;<u>JavaScript &amp; DOM (Document Object Model)</u></h2>
+            <div class="content">
+                <div class="content-parts">
+                    <h3>Adittion</h3>
+                    <label>x : </label><input type="text" id="addx"></input><br>
+                    <label>y : </label><input type="text" id="addy"></input><br>
+                    <label id="addAns">Answer :</label><br>
+                    <button onclick="add()">Add</button>
+                </div>
+                <div class="content-parts">
+                    <h3>Subtraction</h3>
+                    <label>x : </label><input type="text" id="subx"></input><br>
+                    <label>y : </label><input type="text" id="suby"></input><br>
+                    <label id="subAns">Answer :</label><br>
+                    <button onclick="sub()">Diff</button>
+                </div>
+                <div class="content-parts">
+                    <h3>Even or Odd</h3>
+                    <label>x : </label><input type="text" id="evenOddx"></input><br>
+                    <label id="evenOddAns">Answer :</label><br>
+                    <button onclick="evenOdd()">Submit</button>
+                </div>
+                <div class="content-parts">
+                    <h3>Factorial</h3>
+                    <label>x : </label><input type="text" id="factx"></input><br>
+                    <label id="factAns">Answer :</label><br>
+                    <button onclick="fact()">Submit</button>
+                </div>
+                <div class="content-parts">
+                    <h3>Changing Style</h3>
+                    <p id="btnStyle">Click on Button to change bg-color</p>
+                    <button onclick="styleBtn()">Click Me</button>
+                    <script>
+                        function styleBtn() {
+                            const r = Math.floor(Math.random() * 255);
+                            const g = Math.floor(Math.random() * 255);
+                            const b = Math.floor(Math.random() * 255);
+                            document.getElementById("btnStyle").style.backgroundColor = `rgb(${r},${g},${b})`;
+                        }
+                    </script>
+                </div>
+                <div class="content-parts">
+                    <h3>Changing Attributes</h3>
+                    <p>Click on link below, then click on <br> button andthen again click on link.<br><a id="linkHref"
+                            href="https://www.google.com" target="_blank">Google</a></p>
+                    <button onclick="changeHref()">Click Me</button>
+                    <script>
+                        function changeHref() {
+                            var link = document.getElementById("linkHref");
+                            link.setAttribute("href", "https://www.facebook.com");
+                        }
+                    </script>
+                </div>
+                <div class="content-parts">
+                    <h3>Manipulate Elements</h3>
+                    <input type="text" id="username" placeholder="Enter Name" autocomplete="off"></input>
+                    <button onclick="addName()">Submit</button>
+                    <button onclick="clearTable()">Clear</button>
+                    <table id="table1">
+                        <thead>
+                            <tr>
+                                <th style="width: 40px;">Sr.No</th>
+                                <th>Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <script>
+                        function addName() {
+                            if (document.getElementById('username').value == '') { alert('missing name'); return }
+                            let table = document.getElementById("table1").getElementsByTagName('tbody')[0];
+                            let newRow = table.insertRow(-1);
+                            let newCell = newRow.insertCell(0);
+                            let newText = document.createTextNode(table.children.length);
+                            newCell.appendChild(newText);
+                            newCell = newRow.insertCell(-1);
+                            newText = document.createTextNode(document.getElementById("username").value);
+                            newCell.appendChild(newText);
+                            document.getElementById('username').value = '';
+                        }
+                        function clearTable() {
+                            let table = document.getElementById("table1").getElementsByTagName('tbody')[0];
+                            table.innerHTML = "";
+                            document.getElementById('username').value = '';
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+        <section id="bom">
+            <h2>&#11088;&nbsp;<u>JavaScript &amp; BOM (Browser Object Model)</u></h2>
+            <div class="content">
+                <div class="content-parts">
+                    <h3>Window</h3>
+                    <p>Width of Window : <span id="windowW"></span><br>
+                        Height of Window : <span id="windowH"></span></p>
+                    <button id="windowSizeBtn">Click Me</button>
+                    <script>
+                        document.getElementById("windowSizeBtn").onclick = function () {
+                            document.getElementById("windowW").innerHTML = window.innerWidth;
+                            document.getElementById("windowH").innerHTML = window.innerHeight;
+                        }
+                    </script>
+                </div>
+                <div class="content-parts">
+                    <h3>Screen</h3>
+                    <p>Width of Screen : <span id="screenW"></span><br>
+                        Height of Screen : <span id="screenH"></span><br>
+                        Color Depth of Screen : <span id="screenD"></span></p>
+                    <button id="screenSizeBtn">Click Me</button>
+                    <script>
+                        document.getElementById("screenSizeBtn").onclick = function () {
+                            document.getElementById("screenW").innerHTML = screen.width;
+                            document.getElementById("screenH").innerHTML = screen.height;
+                            document.getElementById("screenD").innerHTML = screen.colorDepth;
+                        }
+                    </script>
+                </div>
+                <div class="content-parts">
+                    <h3>Navigator</h3>
+                    <p>Browser Name : <span id="browserName"></span><br>
+                        Browser Code Name : <span id="browserCodeN"></span><br>
+                        Browser Language : <span id="browserLang"></span></p>
+                    <button id="navigatorBtn">Click Me</button>
+                    <script>
+                        document.getElementById("navigatorBtn").onclick = function () {
+                            document.getElementById("browserName").innerHTML = navigator.appName;
+                            document.getElementById("browserCodeN").innerHTML = navigator.appCodeName;
+                            document.getElementById("browserLang").innerHTML = navigator.language;
+                        }
+                    </script>
+                </div>
+                <div class="content-parts">
+                    <h3>Location</h3>
+                    <script>
+                        document.write(window.location.href);
+                        document.write("<br>" + window.location.protocol);
+                        document.write("<br>" + window.location.host);
+                        document.write("<br>" + window.location.hostname);
+                        document.write("<br>" + window.location.port);
+                        document.write("<br>" + window.location.pathname);
+                        document.write("<br>" + window.location.search);
+                        document.write("<br>" + window.location.hash);
+                    </script>
+                    <strong>*this is only work when website is hosted</strong>
+                </div>
+            </div>
+        </section>
+        <section id="">
+            <h2>&#11088;&nbsp;<u></u></h2>
+            <div class="content">
+                <div class="content-parts">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>created by Vaibhav Ankolekar</footer>
+</body>
+
+</html>

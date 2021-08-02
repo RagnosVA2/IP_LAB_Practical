@@ -1,0 +1,60 @@
+:root {
+    font-size: 16px;
+    font-family: monospace;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    position: fixed;
+    margin: 0;
+    padding: 12px 0px 18px 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #3691E3;
+    color: white;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 0px 0px 3px #FF0000;
+    font-family: monospace;
+}
+
+.grid-view {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    margin-top: 60px;
+    padding: 30px;
+}
+
+.pr-item {
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 2px lightgrey;
+    transition: transform 0.2s;
+    text-decoration: none;
+    color: black;
+}
+
+.pr-item:hover {
+    transform: scale(1.15);
+}
+
+footer {
+    text-align: right;
+    padding: 20px;
+    margin-top: auto;
+}

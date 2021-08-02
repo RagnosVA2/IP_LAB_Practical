@@ -1,0 +1,138 @@
+:root {
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+h3, h4, h5 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+nav::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    height: 100vh;
+    gap: 0px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 55px 1fr 30px;
+    grid-template-areas: "header header""nav main""footer footer";
+}
+
+header, footer {
+    color: #fff;
+    text-shadow: 0px 0px 8px black;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #1F558F;
+}
+
+header {
+    font-size: 1.8rem;
+    grid-area: header;
+}
+
+footer {
+    font-size: 0.8rem;
+    grid-area: footer;
+}
+
+nav {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background: #9CF3FF;
+    grid-area: nav;
+    overflow: auto;
+}
+
+main {
+    box-sizing: border-box;
+    grid-area: main;
+    background: #fff;
+    overflow: auto;
+    height: 100%;
+}
+
+main>section {
+    display: none;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 10px 70px 20px 30px;
+    height: 100%;
+    overflow: auto;
+    background-color: #eaffba;
+}
+
+.content {
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.content-parts {
+    font-family: consolas;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    background: #ecf0f3;
+    padding: 20px;
+}
+
+body>input[type="radio"] {
+    display: none;
+}
+
+nav>label {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-size: 0.8px;
+    font-weight: 600;
+    min-width: 120px;
+}
+
+nav>label:hover {
+    background: #00C8FF;
+}
+
+#nav-home:checked~nav #label-home, #nav-basic:checked~nav #label-basic, #nav-dom:checked~nav #label-dom, #nav-bom:checked~nav #label-bom {
+    background: #EAFFBA;
+    border-left: 3px solid red;
+}
+
+#nav-home:checked~main #home, #nav-basic:checked~main #basic, #nav-dom:checked~main #dom, #nav-bom:checked~main #bom {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 2px solid black;
+    text-align: left;
+    padding: 0px 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #04AA6D;
+    text-align: center;
+    color: white;
+}

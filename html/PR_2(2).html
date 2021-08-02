@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2(2)</title>
+    <link rel="stylesheet" href="/css/style_PR_2(2).css">
+    </link>
+</head>
+
+<body>
+    <header>CSS All Properties</header>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#basic">Basic</a></li>
+            <li><a href="#boxModel">Box Model</a></li>
+            <li><a href="#cursor">Cursor</a></li>
+            <li><a href="#over-flow">Overflow</a></li>
+            <li><a href="#position">Position</a></li>
+            <li><a href="#z-index">z-index</a></li>
+            <li><a href="#pseudoClasses">Pseudo Classes</a></li>
+            <li><a href="#pseudoElements">Pseudo Elements</a></li>
+            <li><a href="#transform">Transform</a></li>
+            <li><a href="#flexBox">Flex Box</a></li>
+            <li><a href="#grid">Grid</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>&#11088;&nbsp;<u>Introduction</u></h2>
+            <div class="content">
+                CSS stands for Cascading Style Sheets. CSS is a standard style sheet language used for describing the
+                presentation (i.e. the layout and formatting) of the web pages.
+                <br><br>Prior to CSS, nearly all of the presentational attributes of HTML documents were contained
+                within the HTML markup (specifically inside the HTML tags);
+                all the font colors, background styles, element alignments, borders and sizes had to be explicitly
+                described within the HTML.
+                <br><br>As a result, development of the large websites became a long and expensive process, since the
+                style information were repeatedly added to every single page of the website.
+                <br><br>To solve this problem CSS was introduced in 1996 by the World Wide Web Consortium (W3C), which
+                also maintains its standard. CSS was designed to enable the separation of presentation and content.
+                Now web designers can move the formatting information of the web pages to a separate style sheet which
+                results in considerably simpler HTML markup, and better maintainability.
+                <br><br>CSS3 is the latest version of the CSS specification. CSS3 adds several new styling features and
+                improvements to enhance the web presentation capabilities.
+            </div>
+        </section>
+        <section id="basic">
+            <h2>&#11088;&nbsp;<u>CSS Basic</u></h2>
+            <div class="content">
+                <div style="margin: 0px 50px 40px 0px;">
+                    <h3>Color</h3>
+                    <span style="color:red">Red</span><br>
+                    <span style="color:blue">Blue</span><br>
+                    <span style="color:green">Green</span>
+                </div>
+                <div style="margin: 0px 50px 40px 0px;">
+                    <h3>Background color</h3>
+                    <div style="background-color:red; width: 100px; color: white; text-align: center;">Red</div>
+                    <div style="background-color:blue; width: 100px; color: white; text-align: center;">Blue</div>
+                    <div style="background-color:green; width: 100px; color: white; text-align: center;">Green</div>
+                </div>
+                <div style="margin: 0px 50px 40px 0px;">
+                    <h3>Font-family</h3>
+                    <span style="font-family: Arial">Arial</span><br>
+                    <span style="font-family: monospace">Monospace</span><br>
+                    <span style="font-family: Times New Roman">Times New Roman</span>
+                </div>
+                <div style="margin: 0px 50px 40px 0px;">
+                    <h3>Font-style</h3>
+                    <span style="font-style: normal; font-family: Times New Roman;">Normal</span><br>
+                    <span style="font-style: italic; font-family: Times New Roman;">Italic</span><br>
+                    <span style="font-style: oblique; font-family: Times New Roman;">Oblique</span>
+                </div>
+                <div style="margin: 0px 50px 40px 0px;">
+                    <h3>Font-size</h3>
+                    <span style="font-size: 10px;">10px</span><br>
+                    <span style="font-size: 20px;">30px</span><br>
+                    <span style="font-size: 30px;">40px</span>
+                </div>
+                <div style="margin: 0px 50px 40px 0px;">
+                    <h3>Font-weight</h3>
+                    <span style="font-weight: 500;">weight: 500</span><br>
+                    <span style="font-weight: 700;">weight: 700</span><br>
+                    <span style="font-weight: 900;">weight: 900</span><br>
+                </div>
+                <div style="margin: 0px 50px 40px 0px;">
+                    <h3>Text-align</h3>
+                    <div style="display:flex; flex-wrap: wrap;">
+                        <span
+                            style="text-align: left; width: 300px; padding: 10px; border: 1px solid black;"><strong>Left<br></strong>A
+                            paragraph is a series of related sentences developing a central idea, called the topic. Try
+                            to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group
+                            of sentences that supports one central, unified idea. Paragraphs add one idea at a time to
+                            your broader argument.</span><br>
+                        <span
+                            style="text-align: center; width: 300px; padding: 10px; border: 1px solid black;"><strong>Center<br></strong>A
+                            paragraph is a series of related sentences developing a central idea, called the topic. Try
+                            to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group
+                            of sentences that supports one central, unified idea. Paragraphs add one idea at a time to
+                            your broader argument.</span><br>
+                        <span
+                            style="text-align: right; width: 300px; padding: 10px; border: 1px solid black;"><strong>Right<br></strong>A
+                            paragraph is a series of related sentences developing a central idea, called the topic. Try
+                            to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group
+                            of sentences that supports one central, unified idea. Paragraphs add one idea at a time to
+                            your broader argument.</span><br>
+                        <span
+                            style="text-align: justify; width: 300px; padding: 10px; border: 1px solid black;"><strong>Justify<br></strong>A
+                            paragraph is a series of related sentences developing a central idea, called the topic. Try
+                            to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group
+                            of sentences that supports one central, unified idea. Paragraphs add one idea at a time to
+                            your broader argument.</span><br>
+                    </div>
+                </div>
+                <div style="margin: 0px 50px 40px 0px;">
+                    <h3>Text-decoration</h3>
+                    <span style="text-decoration: overline">Overline</span><br>
+                    <span style="text-decoration: line-through">Line-through</span><br>
+                    <span style="text-decoration: underline">Underline</span>
+                </div>
+                <div style="margin: 0px 50px 40px 0px;">
+                    <h3>Text-transform</h3>
+                    <span style="text-transform: uppercase;">Uppercase</span><br>
+                    <span style="text-transform: capitalize;">capitalize</span><br>
+                    <span style="text-transform: lowercase;">LOVERCASE</span><br>
+                </div>
+            </div>
+        </section>
+        <section id="boxModel">
+            <h2>&#11088;&nbsp;<u>Box Model</u></h2>
+            <div class="content">
+                <div style="margin: 0px 0px 40px 0px;">
+                    <h3>Padding</h3>
+                    <div style="display:flex; flex-wrap: wrap;">
+                        <span style="padding: 0px; width: 300px; border: 1px solid black;"><strong>Padding:
+                                0px<br></strong>A paragraph is a series of related sentences developing a central idea,
+                            called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a
+                            sentence or a group of sentences that supports one central, unified idea. Paragraphs add one
+                            idea at a time to your broader argument.</span><br>
+                        <span style="padding: 10px; width: 300px; border: 1px solid black;"><strong>Padding:
+                                10px<br></strong>A paragraph is a series of related sentences developing a central idea,
+                            called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a
+                            sentence or a group of sentences that supports one central, unified idea. Paragraphs add one
+                            idea at a time to your broader argument.</span><br>
+                        <span style="padding: 20px; width: 300px; border: 1px solid black;"><strong>Padding:
+                                20px<br></strong>A paragraph is a series of related sentences developing a central idea,
+                            called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a
+                            sentence or a group of sentences that supports one central, unified idea. Paragraphs add one
+                            idea at a time to your broader argument.</span><br>
+                    </div>
+                </div>
+                <div style="margin: 0px 0px 40px 0px;">
+                    <h3>Margin</h3>
+                    <div style="display:flex; flex-wrap: wrap;">
+                        <span style="margin: 0px; width: 300px; border: 1px solid black;"><strong>Margin:
+                                0px<br></strong>A paragraph is a series of related sentences developing a central idea,
+                            called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a
+                            sentence or a group of sentences that supports one central, unified idea. Paragraphs add one
+                            idea at a time to your broader argument.</span><br>
+                        <span style="margin: 10px; width: 300px; border: 1px solid black;"><strong>Margin:
+                                10px<br></strong>A paragraph is a series of related sentences developing a central idea,
+                            called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a
+                            sentence or a group of sentences that supports one central, unified idea. Paragraphs add one
+                            idea at a time to your broader argument.</span><br>
+                        <span style="margin: 20px; width: 300px; border: 1px solid black;"><strong>Margin:
+                                20px<br></strong>A paragraph is a series of related sentences developing a central idea,
+                            called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a
+                            sentence or a group of sentences that supports one central, unified idea. Paragraphs add one
+                            idea at a time to your broader argument.</span><br>
+                    </div>
+                </div>
+                <div style="margin: 0px 0px 40px 0px;">
+                    <h3>Border</h3>
+                    <div style="display:flex; flex-wrap: wrap;">
+                        <span style="border: 1px solid black; margin: 5px; padding: 10px; width: 280px; "><strong>Border:
+                                1px solid black<br></strong>A paragraph is a series of related sentences developing a
+                            central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a
+                            paragraph is a sentence or a group of sentences that supports one central, unified idea.
+                            Paragraphs add one idea at a time to your broader argument.</span><br>
+                        <span style="border: 2px solid red; margin: 5px; padding: 10px; width: 280px; "><strong>Border:
+                                2px solid red<br></strong>A paragraph is a series of related sentences developing a
+                            central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a
+                            paragraph is a sentence or a group of sentences that supports one central, unified idea.
+                            Paragraphs add one idea at a time to your broader argument.</span><br>
+                        <span style="border: 2px dashed red; margin: 5px; padding: 10px; width: 280px; "><strong>Border:
+                                2px dashed red<br></strong>A paragraph is a series of related sentences developing a
+                            central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a
+                            paragraph is a sentence or a group of sentences that supports one central, unified idea.
+                            Paragraphs add one idea at a time to your broader argument.</span><br>
+                        <span style="border: 5px double red; margin: 5px; padding: 10px; width: 280px; "><strong>Border:
+                                5px double red<br></strong>A paragraph is a series of related sentences developing a
+                            central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a
+                            paragraph is a sentence or a group of sentences that supports one central, unified idea.
+                            Paragraphs add one idea at a time to your broader argument.</span><br>
+                        <span style="border: 5px inset red; margin: 5px; padding: 10px; width: 280px; "><strong>Border:
+                                5px inset red<br></strong>A paragraph is a series of related sentences developing a
+                            central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a
+                            paragraph is a sentence or a group of sentences that supports one central, unified idea.
+                            Paragraphs add one idea at a time to your broader argument.</span><br>
+                        <span
+                            style="border: 5px solid; border-color:red green blue purple; padding: 10px; width: 280px; "><strong>Border:
+                                different color sides<br></strong>A paragraph is a series of related sentences
+                            developing a central idea, called the topic. Try to think about paragraphs in terms of
+                            thematic unity: a paragraph is a sentence or a group of sentences that supports one central,
+                            unified idea. Paragraphs add one idea at a time to your broader argument.</span><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cursor">
+            <h2>&#11088;&nbsp;<u>Cursor</u></h2>
+            <div class="content">
+                <div style="margin: 0px 50px 40px 0px; cursor: default; padding: 20px; border: 2px solid black;">
+                    Default
+                </div>
+                <div style="margin: 0px 50px 40px 0px; cursor: pointer; padding: 20px; border: 2px solid black;">
+                    Pointer
+                </div>
+                <div style="margin: 0px 50px 40px 0px; cursor: text; padding: 20px; border: 2px solid black;">
+                    Text
+                </div>
+                <div style="margin: 0px 50px 40px 0px; cursor: wait; padding: 20px; border: 2px solid black;">
+                    Wait
+                </div>
+                <div style="margin: 0px 50px 40px 0px; cursor: help; padding: 20px; border: 2px solid black;">
+                    Help
+                </div>
+                <div style="margin: 0px 50px 40px 0px; cursor: progress; padding: 20px; border: 2px solid black;">
+                    Progress
+                </div>
+                <div style="margin: 0px 50px 40px 0px; cursor: crosshair; padding: 20px; border: 2px solid black;">
+                    Crosshair
+                </div>
+                <div style="margin: 0px 50px 40px 0px; cursor: move; padding: 20px; border: 2px solid black;">
+                    Move
+                </div>
+            </div>
+        </section>
+        <section id="over-flow">
+            <h2>&#11088;&nbsp;<u>Overflow</u></h2>
+            <div class="content">
+                <div
+                    style=" overflow: hidden; margin: 0px 30px 30px 0px; padding: 10px; border: 2px solid black; width: 280px; height: 200px;">
+                    <strong>Overflow: hidden;<br></strong>A paragraph is a series of related sentences developing a
+                    central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a
+                    paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs
+                    add one idea at a time to your broader argument.
+                    A paragraph is a series of related sentences developing a central idea, called the topic. Try to
+                    think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences
+                    that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.
+                </div>
+                <div
+                    style=" overflow: scroll; margin: 0px 30px 30px 0px; padding: 10px; border: 2px solid black; width: 280px; height: 200px;">
+                    <strong>Overflow: scroll;<br></strong>A paragraph is a series of related sentences developing a
+                    central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a
+                    paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs
+                    add one idea at a time to your broader argument.
+                    A paragraph is a series of related sentences developing a central idea, called the topic. Try to
+                    think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences
+                    that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.
+                </div>
+                <div
+                    style=" overflow: auto; margin: 0px 30px 30px 0px; padding: 10px; border: 2px solid black; width: 280px; height: 200px;">
+                    <strong>Overflow: auto;<br></strong>A paragraph is a series of related sentences developing a
+                    central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a
+                    paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs
+                    add one idea at a time to your broader argument.
+                    A paragraph is a series of related sentences developing a central idea, called the topic. Try to
+                    think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences
+                    that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.
+                </div>
+                <div
+                    style=" overflow: visible; margin: 0px 30px 30px 0px; padding: 10px; border: 2px solid black; width: 280px; height: 200px;">
+                    <strong>Overflow: visible;<br></strong>A paragraph is a series of related sentences developing a
+                    central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a
+                    paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs
+                    add one idea at a time to your broader argument.
+                    A paragraph is a series of related sentences developing a central idea, called the topic. Try to
+                    think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences
+                    that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.
+                </div>
+            </div>
+        </section>
+        <section id="position" style="position: relative;">
+            <h2>&#11088;&nbsp;<u>Position</u></h2>
+            <div class="content">
+                <div
+                    style="position: sticky; top: 4px; margin: 0px 20px 40px 0px; width: 300px; border: 2px solid black; padding: 10px;">
+                    <strong>Position: stick to top<br></strong>A paragraph is a series of related sentences developing a
+                    central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a
+                    paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs
+                    add one idea at a time to your broader argument.
+                </div>
+                <div
+                    style="position: relative; top: 20px; margin: 0px 20px 40px 0px; width: 300px; border: 2px solid black; padding: 10px;">
+                    <strong>Position: relative - shift 20px bottom<br></strong>A paragraph is a series of related
+                    sentences developing a central idea, called the topic. Try to think about paragraphs in terms of
+                    thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified
+                    idea. Paragraphs add one idea at a time to your broader argument.
+                </div>
+                <div
+                    style="position: absolute; top: 0px; right: 0px; margin: 5px; width: 300px; border: 2px solid black; padding: 10px;">
+                    <strong>Position: absolute - top-right corner<br></strong>A paragraph is a series of related
+                    sentences developing a central idea, called the topic. Try to think about paragraphs in terms of
+                    thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified
+                    idea. Paragraphs add one idea at a time to your broader argument.
+                </div>
+                <div
+                    style="position: static; visibility: hidden; margin: 0px 20px 40px 0px; width: 300px; border: 2px solid black; padding: 10px;">
+                    <strong>Position: static<br></strong>A paragraph is a series of related sentences developing a
+                    central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a
+                    paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs
+                    add one idea at a time to your broader argument.
+                </div>
+                <div
+                    style="position: static; margin: 0px 20px 40px 0px; width: 300px; border: 2px solid black; padding: 10px;">
+                    <strong>Position: static<br></strong>A paragraph is a series of related sentences developing a
+                    central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a
+                    paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs
+                    add one idea at a time to your broader argument.
+                </div>
+                <div
+                    style="position: static; visibility: hidden; margin: 0px 20px 40px 0px; width: 300px; border: 2px solid black; padding: 10px;">
+                    <strong>Position: static<br></strong>A paragraph is a series of related sentences developing a
+                    central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a
+                    paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs
+                    add one idea at a time to your broader argument.
+                </div>
+            </div>
+        </section>
+        <section id="z-index">
+            <h2>&#11088;&nbsp;<u>Z-Index</u></h2>
+            <div class="content" style="position: relative">
+                <img style="z-index: 1; position: absolute; top: 0px; left: 0px;" height="250px" width="175px"
+                    src="https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmVydGljYWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80">
+                <img style="z-index: 2; position: absolute; top: 100px; left: 125px;" height="250px" width="175px"
+                    src="https://thumbs.dreamstime.com/b/vertical-shot-road-magnificent-mountains-under-blue-sky-captured-california-163571053.jpg">
+                <img style="z-index: 1; position: absolute; top: 0px; left: 250px;" height="250px" width="175px"
+                    src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2013/08/1.-Moraine_final.jpg?w=600&h=1260&ssl=1">
+                <img style="z-index: 2; position: absolute; top: 100px; left: 375px;" height="250px" width="175px"
+                    src="https://cdn.shortpixel.ai/client2/q_lossy,ret_img,w_683,h_1024/https://www.pixinfocus.com/wp-content/uploads/2020/06/horizontal-vs-vertical-11-683x1024.jpg">
+                <img style="z-index: 1; position: absolute; top: 0px; left: 500px;" height="250px" width="175px"
+                    src="https://wallpaperaccess.com/full/1180075.jpg">
+                <img style="z-index: 2; position: absolute; top: 100px; left: 625px;" height="250px" width="175px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR03qYyfQ44vNPpUYV4TmnKu1wigfSHGYYjQBAlU21nfmTu_uRy-DU9GA25RS1uKp4lP6E&usqp=CAU">
+            </div>
+        </section>
+        <section id="pseudoClasses">
+            <h2>&#11088;&nbsp;<u>Pseudo Classes</u></h2>
+            <div class="content">
+                <div id="pseudoH1" class="pseudoH" style="margin: 0px 50px 40px 0px;">
+                    Hover on Me
+                </div>
+                <div id="pseudoH2" class="pseudoH" style="margin: 0px 50px 40px 0px;">
+                    Hover on Me
+                </div>
+                <div id="pseudoH3" class="pseudoH" style="margin: 0px 50px 40px 0px;">
+                    Hover on Me
+                </div>
+                <br>
+                <div style="margin: 0px 50px 40px 0px;">
+                    <table>
+                        <tr>
+                            <th>Row</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>John</td>
+                            <td>Carter</td>
+                            <td>johncarter@mail.com</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Peter</td>
+                            <td>Parker</td>
+                            <td>peterparker@mail.com</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John</td>
+                            <td>Rambo</td>
+                            <td>johnrambo@mail.com</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Harry</td>
+                            <td>Potter</td>
+                            <td>harrypotter@mail.com</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="pseudoElements">
+            <h2>&#11088;&nbsp;<u>Pseudo Elements</u></h2>
+            <div class="content">
+                <p class="paragraph">
+                    Harry Potter and the Philosopher's Stone (released in the United States and India as Harry Potter
+                    and the Sorcerer's Stone) is a 2001 fantasy film directed by Chris Columbus and distributed by
+                    Warner Bros. Pictures, based on J. K. Rowling's 1997 novel of the same name. Produced by David
+                    Heyman and screenplay by Steve Kloves, it is the first instalment of the Harry Potter film series.
+                    The film stars Daniel Radcliffe as Harry Potter, with Rupert Grint as Ron Weasley, and Emma Watson
+                    as Hermione Granger. Its story follows Harry's first year at Hogwarts School of Witchcraft and
+                </p>
+                <p class="paragraph">
+                    Harry Potter and the Chamber of Secrets is a 2002 fantasy film directed by Chris Columbus and
+                    distributed by Warner Bros. Pictures, based on J. K. Rowling's 1998 novel of the same name. Produced
+                    by David Heyman and written by Steve Kloves, it is the sequel to Harry Potter and the Philosopher's
+                    Stone (2001) and the second instalment in the Harry Potter film series. The film stars Daniel
+                    Radcliffe as Harry Potter, with Rupert Grint as Ron Weasley, and Emma Watson as Hermione Granger.
+                    Its story follows Harry's second year at Hogwarts School of Witchcraft and Wizardry as the Heir of
+                </p>
+                <p class="paragraph">
+                    Harry Potter and the Prisoner of Azkaban is a 2004 fantasy film directed by Alfonso Cuarón and
+                    distributed by Warner Bros. Pictures, based on J. K. Rowling's 1999 novel of the same name. Produced
+                    by Chris Columbus, David Heyman, and Mark Radcliffe and written by Steve Kloves, it is the sequel to
+                    Harry Potter and the Chamber of Secrets (2002) and the third instalment in the Harry Potter film
+                    series. The film stars Daniel Radcliffe as Harry Potter, with Rupert Grint as Ron Weasley, and Emma
+                    Watson as Hermione Granger. Its story follows Harry's third year at Hogwarts as he is informed that
+                    a prisoner named Sirius Black has
+                </p>
+            </div>
+        </section>
+        <section id="transform" style="display: flex;">
+            <div style="width: 40%;">
+                <h2 style="margin-top: 4px;">&#11088;&nbsp;<u>2D Transform</u></h2>
+                <div class="content">
+                    <div id="translate" class="transformdiv">
+                        <strong>Translate</strong>
+                    </div>
+                    <div id="rotate" class="transformdiv">
+                        <strong>Rotate</strong>
+                    </div>
+                    <div id="scale" class="transformdiv">
+                        <strong>Scale</strong>
+                    </div>
+                    <div id="skew" class="transformdiv">
+                        <strong>Skew</strong>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 40%; perspective: 500px;">
+                <h2 style="margin-top: 4px;">&#11088;&nbsp;<u>3D Transform</u></h2>
+                <div class="content"
+                    style="display:flex; flex-wrap: wrap; align-items: center; justify-content: center; height: 88%;">
+                    <div class="card">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div>
+        </section>
+        <section id="flexBox">
+            <h2>&#11088;&nbsp;<u></u>Flex Box</h2>
+            <div class="content" style="flex-wrap: nowrap; gap: 10px;">
+                <img height="250px" width="175px"
+                    src="https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmVydGljYWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80">
+                <img height="250px" width="175px"
+                    src="https://thumbs.dreamstime.com/b/vertical-shot-road-magnificent-mountains-under-blue-sky-captured-california-163571053.jpg">
+                <img height="250px" width="175px"
+                    src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2013/08/1.-Moraine_final.jpg?w=600&h=1260&ssl=1">
+                <img height="250px" width="175px"
+                    src="https://cdn.shortpixel.ai/client2/q_lossy,ret_img,w_683,h_1024/https://www.pixinfocus.com/wp-content/uploads/2020/06/horizontal-vs-vertical-11-683x1024.jpg">
+                <img height="250px" width="175px" src="https://wallpaperaccess.com/full/1180075.jpg">
+                <img height="250px" width="175px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR03qYyfQ44vNPpUYV4TmnKu1wigfSHGYYjQBAlU21nfmTu_uRy-DU9GA25RS1uKp4lP6E&usqp=CAU"><img
+                    height="250px" width="175px"
+                    src="https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmVydGljYWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80">
+                <img height="250px" width="175px"
+                    src="https://thumbs.dreamstime.com/b/vertical-shot-road-magnificent-mountains-under-blue-sky-captured-california-163571053.jpg">
+                <img height="250px" width="175px"
+                    src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2013/08/1.-Moraine_final.jpg?w=600&h=1260&ssl=1">
+                <img height="250px" width="175px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR03qYyfQ44vNPpUYV4TmnKu1wigfSHGYYjQBAlU21nfmTu_uRy-DU9GA25RS1uKp4lP6E&usqp=CAU">
+            </div>
+        </section>
+        <section id="grid">
+            <h2>&#11088;&nbsp;<u>Grid</u></h2>
+            <div class="content">
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fill, minmax(175px, 1fr)); gap: 20px; width: 100%;">
+                    <img height="250px" width="175px"
+                        src="https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmVydGljYWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80">
+                    <img height="250px" width="175px"
+                        src="https://thumbs.dreamstime.com/b/vertical-shot-road-magnificent-mountains-under-blue-sky-captured-california-163571053.jpg">
+                    <img height="250px" width="175px"
+                        src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2013/08/1.-Moraine_final.jpg?w=600&h=1260&ssl=1">
+                    <img height="250px" width="175px"
+                        src="https://cdn.shortpixel.ai/client2/q_lossy,ret_img,w_683,h_1024/https://www.pixinfocus.com/wp-content/uploads/2020/06/horizontal-vs-vertical-11-683x1024.jpg">
+                    <img height="250px" width="175px" src="https://wallpaperaccess.com/full/1180075.jpg">
+                    <img height="250px" width="175px"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR03qYyfQ44vNPpUYV4TmnKu1wigfSHGYYjQBAlU21nfmTu_uRy-DU9GA25RS1uKp4lP6E&usqp=CAU">
+                    <img height="250px" width="175px"
+                        src="https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmVydGljYWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80">
+                    <img height="250px" width="175px"
+                        src="https://thumbs.dreamstime.com/b/vertical-shot-road-magnificent-mountains-under-blue-sky-captured-california-163571053.jpg">
+                    <img height="250px" width="175px"
+                        src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2013/08/1.-Moraine_final.jpg?w=600&h=1260&ssl=1">
+                    <img height="250px" width="175px"
+                        src="https://cdn.shortpixel.ai/client2/q_lossy,ret_img,w_683,h_1024/https://www.pixinfocus.com/wp-content/uploads/2020/06/horizontal-vs-vertical-11-683x1024.jpg">
+                    <img height="250px" width="175px" src="https://wallpaperaccess.com/full/1180075.jpg">
+                    <img height="250px" width="175px"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR03qYyfQ44vNPpUYV4TmnKu1wigfSHGYYjQBAlU21nfmTu_uRy-DU9GA25RS1uKp4lP6E&usqp=CAU">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>designed by Vaibhav Ankolekar</footer>
+</body>
+
+</html>
