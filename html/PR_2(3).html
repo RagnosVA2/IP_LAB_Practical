@@ -15,11 +15,13 @@
     <input type="radio" id="nav-basic" name="navbar">
     <input type="radio" id="nav-dom" name="navbar">
     <input type="radio" id="nav-bom" name="navbar">
+    <input type="radio" id="nav-adv" name="navbar">
     <nav>
         <label for="nav-home" id="label-home">Home</label>
         <label for="nav-basic" id="label-basic">Basic</label>
         <label for="nav-dom" id="label-dom">JS &amp; DOM</label>
         <label for="nav-bom" id="label-bom">JS &amp; BOM</label>
+        <label for="nav-adv" id="label-adv">JS Advanced</label>
     </nav>
     <main>
         <section id="home">
@@ -305,12 +307,57 @@
                     </script>
                     <strong>*this is only work when website is hosted</strong>
                 </div>
+                <div class="content-parts">
+                    <h3>Dialog Box</h3>
+                    <button id="alertBtn">Alert Dialog Boxes</button><br>
+                    <button id="confirmBtn">Confirm Dialog Boxes</button><br>
+                    <button id="promptBtn">Prompt Dialog Boxes</button><br>
+                    <span id="promptOutput"></span>
+                    <script>
+                        document.getElementById("alertBtn").onclick = function () {
+                            alert("You clicked the Alert Button");
+                        }
+                        document.getElementById("confirmBtn").onclick = function () {
+                            confirm("Confirm Dialog Box have cancel button");
+                        }
+                        document.getElementById("promptBtn").onclick = function () {
+                            let name = prompt("What is your Name ?");
+                            if (name.length > 0 && name != "null") {
+                                document.getElementById("promptOutput").innerHTML = "Name : " + name;
+                            } else {
+                                document.getElementById("promptOutput").innerHTML = "Name : Anonymous!";
+                            }
+                        }
+                    </script>
+                </div>
+                <div class="content-parts">
+                    <h3>Timer</h3>
+                    <p>The current time on your computer is: <span id="clock"></span><br>used setInterval()</p>
+                    <script>
+                        function showTime() {
+                            var d = new Date();
+                            document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+                        }
+                        setInterval(showTime, 1000);
+                    </script>
+                </div>
             </div>
         </section>
-        <section id="">
-            <h2>&#11088;&nbsp;<u></u></h2>
+        <section id="advanced">
+            <h2>&#11088;&nbsp;<u>JavaScript Advanced</u></h2>
             <div class="content">
                 <div class="content-parts">
+                    <h3>Date &amp; Time</h3>
+                    <p>Date : <span id="date"></span></p>
+                    <p>Time : <span id="time"></span></p>
+                    <button id="getDateTime">Get Date Time</button>
+                    <script>
+                        document.getElementById("getDateTime").onclick = function () {
+                            var date = new Date();
+                            document.getElementById("date").innerHTML = date.toDateString();
+                            document.getElementById("time").innerHTML = date.toLocaleTimeString();
+                        }
+                    </script>
                 </div>
             </div>
         </section>
